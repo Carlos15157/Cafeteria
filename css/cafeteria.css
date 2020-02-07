@@ -1,0 +1,58 @@
+* {
+  margin: 0; /*zerar a margem externa dos elementos*/
+  padding: 0; /*zerar a margem interna dos elementos*/
+}
+header {
+  /* Vamos adicionar uma imagem de fundo ao cabeçário */
+  background-image: url("../img/cafeteria2.jpg");
+  background-position: 0px -270px;
+  height: 300px;
+  transition: ease 5s;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 48pt;
+  padding-top: 100px;
+  text-shadow: 5px 5px 10px rgb(31, 43, 212);
+}
+/* Vamos formatar os elemnetos de li para ficar um ao lado do outro
+com o comando display */
+nav ul li {
+  /* Dispor os links um ao lado do outro */
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Alinnhar os elementos de link ao centro usando text-align center
+  no nav, assim tudo o que estiver dentro do nave irá para o centro */
+nav {
+  text-align: center;
+  margin-top: 50px;
+  /* A cor utilizada para o fundo da barra nav foi o rgba, que 
+  significa red, green, blue e alpha(transparência), onde o 
+  valor mais próximo do 0(zero) é totalmente transparente e
+  quando mais próximo do 1 é totalmente sólido. Neste caso
+  estamos usando 80% de solidez, ou seja, aplicamos
+  20% de transparência. */
+  background-color: rgba(31, 43, 212, 0.4);
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+nav ul li a {
+  color: rgba(255, 255, 255);
+  /* Para retirar o sublinhado(underline) dos links
+  utilizaremos o comando text-decoration com o valor
+  none (nenhum) */
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 15pt;
+  /* Aplicação de negrito na letra */
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  padding-left: 2px;
+}
