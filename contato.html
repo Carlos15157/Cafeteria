@@ -34,7 +34,47 @@
 
     <!-- A estrutura da área main fica reservada ao conteúdo
     das páginas específicas. -->
-    <main></main>
+    <main>
+      <h4>Fale Conosco</h4>
+      <form action="confirmacao.html">
+        <label>Nome *</label>
+        <input type="text"name="Nome" placeholder="Nome Completo" required>
+        <label>E-mail *</label>
+        <input type="email" name="e-mail" placeholder="exemplo@dominio.com.br" required>
+        <label>Telefone</label>
+        <input type="tel" name="telefone" placeholder="(11) 2569-2473">
+        <label>Sexo *</label>
+        <span id="sexo">
+          <input type="radio"name="Sexo" value="Masculino"> Masculino
+          <input type="radio"name="Sexo" value="Feminino"> Feminino
+          <input type="radio"name="Sexo" value="Outros"> Outros
+        </span>
+
+
+        <select name="assunto">
+          <option value="Selecione">Selecione o assunto</option> 
+          <option value="Dúvidas">Dúvidas</option> 
+          <option value="Sugestão">Sugestão</option>
+          <option value="Reclamação">Reclamação</option>
+          <option value="Problemas">Problemas</option>
+        </select>
+        <label>Mensagem</label>
+        <textarea name="Mensagem"></textarea>
+        <span id="check"><input type="checkbox" name="newsletter">
+        Desejo Receber mensagens e notícias sobre promoções e eventos no meu e-mail e telefone.
+        </span>
+
+
+
+        <input type="submit" value= "Enviar">
+
+
+      </form>
+
+
+
+
+    </main>
 
     <!-- Criação da área do rodapé co o comando footer. Esta área
     se destina a exibição do endereço, email, telefones e redes sociais.-->
