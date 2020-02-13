@@ -183,7 +183,7 @@ p {
   border-radius: 50%;
   transition: ease 3s;
 }
-#imagem img:hover{
+#imagem img:hover {
   transition: ease 1s;
   cursor: pointer;
   transform: scale(1.1);
@@ -207,4 +207,5 @@ h4 {
   margin-bottom: 10px;
   letter-spacing: 5px;
   text-align: center;
+  padding-right: 50px;
 }
